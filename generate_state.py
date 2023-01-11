@@ -1,8 +1,8 @@
 import json
 import pathlib
 import main
-import os
-from functools import wraps
+import shutil
+shutil.rmtree('./api')
 
 
 def write_wrapper(path: str):
