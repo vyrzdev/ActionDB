@@ -23,6 +23,10 @@ jobs:
         run: |
           git config --global user.name "ActionDB Journal Ingress"
           
+          export DISCORDTOKEN=${{ secrets.DISCORDTOKEN }}
+          export DISCORDGUILDID=${{ secrets.DISCORDGUILDID }}
+          export DISCORDCHANNELID=${{ secrets.DISCORDCHANNELID }}
+          
           pip install discord
           
           python journal_ingress.py

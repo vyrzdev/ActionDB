@@ -27,6 +27,10 @@ jobs:
           
           pip install discord
           
+          export DISCORDTOKEN=${{ secrets.DISCORDTOKEN }}
+          export DISCORDGUILDID=${{ secrets.DISCORDGUILDID }}
+          export DISCORDCHANNELID=${{ secrets.DISCORDCHANNELID }}
+          
           python journal_ingress.py
           git add -A
           git diff-index --quiet HEAD || git commit -m 'Updated Journal'
