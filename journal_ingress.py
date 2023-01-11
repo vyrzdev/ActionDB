@@ -41,6 +41,7 @@ async def do():
                 with open('./execution_history.txt', 'w') as execution_history_handle:
                     execution_history_handle.seek(0)
                     execution_history_handle.writelines([execution + '\n' for execution in execution_history])
+                await message.reply("Applied!")
         if message.content.startswith('delete'):
             if str(message.id) not in execution_history:
                 n = message.content.split(" ")[1]
@@ -54,6 +55,7 @@ async def do():
                 with open('./execution_history.txt', 'w') as execution_history_handle:
                     execution_history_handle.seek(0)
                     execution_history_handle.writelines([execution + '\n' for execution in execution_history])
+                await message.reply("Applied!")
 
 
 @discord_client.event
