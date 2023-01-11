@@ -2,8 +2,8 @@ name: Generate New State
 on:
   workflow_run:
     workflows: [Journal Ingress from Discord]
-      types:
-        - completed
+    types:
+      - completed
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
