@@ -28,3 +28,8 @@ def generate_product_index():
     for person in people:
         build.append(f"{person['doc_id']}.json")
     return json.dumps(build)
+
+
+for entity in main.collections['people']:
+    write_wrapper(f'./api/public/people/{entity["doc_id"]}.json')(lambda: json.dumps(entity))
+
