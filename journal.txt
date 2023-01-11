@@ -1,0 +1,3 @@
+C;#people
+P;people;{"foo":"foo","foo2":"foo2"};#72c61e73-da59-41d9-aa17-6a587485c280
+P;people;{"foo_static": "foo","foo_static2":"foo2"};#foo_static
