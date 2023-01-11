@@ -2,7 +2,10 @@ import json
 import pathlib
 import main
 import shutil
-shutil.rmtree('./api')
+import os.path
+
+if os.path.exists("./api"):
+    shutil.rmtree('./api')
 
 
 def write_wrapper(path: str):
