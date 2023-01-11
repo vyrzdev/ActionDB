@@ -1,7 +1,7 @@
 name: Generate New State
 on:
   workflow_run:
-    workflows: [ "Journal Ingress from Discord" ]
+    workflows: ["Journal Ingress from Discord"]
       types:
         - completed
 
